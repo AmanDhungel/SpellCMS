@@ -1,0 +1,240 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "why How to use Spell",
+      "publishedDate": "2023-10-01",
+      "author": "Aman Dhungel",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam natus veniam iure excepturi quae dicta soluta at dolores? Aliquid facere nobis illum, culpa voluptatum incidunt minima labore harum obcaecati!",
+      "tags": [
+        "Spell",
+        "Machine Learning",
+        "Productivity"
+      ],
+      "category": "Web Development",
+      "status": true,
+      "imageUrl": "https://images.unsplash.com/photo-1645092551767-5f3c0d4c11a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Why Spell is better than other services",
+      "publishedDate": "2023-10-02",
+      "author": "Budathoki Aayush",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam natus veniam iure excepturi quae dicta soluta at dolores? Aliquid facere nobis illum, culpa voluptatum incidunt minima labore harum obcaecati!",
+      "tags": [
+        "Spell",
+        "Machine Learning",
+        "Cloud Services"
+      ],
+      "category": "Machine Learning",
+      "status": true,
+      "imageUrl": "https://images.unsplash.com/photo-1645092551767-5f3c0d4c11a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": "48b3",
+      "title": "asdasd",
+      "content": "asdasd",
+      "author": "asdasd",
+      "status": "asdasd",
+      "date": "",
+      "body": "sadasd",
+      "tags": "asdasd",
+      "imageUrl": "asdadsadsasd",
+      "category": "asdasd"
+    },
+    {
+      "id": "daa1",
+      "title": "aasdsad",
+      "content": "adsasdasd",
+      "author": "asdasdasd",
+      "status": "asdsad",
+      "date": "",
+      "body": "asdsad",
+      "tags": "asdsad",
+      "imageUrl": "asdasd",
+      "category": "asdasd"
+    },
+    {
+      "id": "d9f3",
+      "title": "rss",
+      "content": "sss",
+      "author": "ss",
+      "status": "ss",
+      "date": "",
+      "body": "ss",
+      "tags": "ss",
+      "imageUrl": "ss",
+      "category": "ss"
+    },
+    {
+      "id": "4d03",
+      "title": "sss",
+      "content": "dsdsd",
+      "author": "asdsad",
+      "status": "asdsad",
+      "date": "",
+      "body": "asdasd",
+      "tags": "asdsad",
+      "imageUrl": "asdasdsad",
+      "category": "asdasd"
+    },
+    {
+      "id": "28f6",
+      "title": "asddsa",
+      "author": "asdsad",
+      "status": "asdasdasd",
+      "body": "asdasd",
+      "tags": [
+        "asdasddas"
+      ],
+      "imageUrl": "asdasdasdsad",
+      "category": "asdasddsa",
+      "publishedDate": "2025-05-17T15:15:45.985Z"
+    },
+    {
+      "id": "2592",
+      "title": "asdsad",
+      "author": "sadsad",
+      "status": "asdads",
+      "body": "dsaasd",
+      "tags": [
+        "asdads"
+      ],
+      "imageUrl": "asdadsasdasd",
+      "category": "asdads",
+      "publishedDate": "2025-05-17T15:16:09.041Z"
+    },
+    {
+      "id": "3321",
+      "title": "asdsad",
+      "author": "saddsa",
+      "status": "asdasd",
+      "body": "asdsad",
+      "tags": [
+        "sadsda"
+      ],
+      "imageUrl": "adsasd",
+      "category": "asdsd",
+      "publishedDate": "2025-05-17T15:17:33.905Z"
+    },
+    {
+      "id": "2b49",
+      "publishedDate": "2025-05-17T15:21:19.901Z",
+      "title": "asdasd",
+      "content": "asdasdsad",
+      "author": "asdasd",
+      "body": "asdasdasd",
+      "tags": [
+        "asdasd",
+        "asdasdsa d",
+        "asd sad as",
+        "d asd",
+        "asd",
+        "asd asd",
+        "asd",
+        "asd"
+      ],
+      "category": "asdasddsa",
+      "status": "published",
+      "imageUrl": "asdasdasdasdasdasd"
+    },
+    {
+      "id": "9996",
+      "publishedDate": "2025-05-17T15:27:37.408Z",
+      "status": "published",
+      "title": "asas",
+      "content": "asasd",
+      "author": "asdasd",
+      "body": "asdasdasd",
+      "tags": [
+        "asdsadas",
+        "asdsad",
+        "asdsadsadsa"
+      ],
+      "category": "asdasdasd",
+      "imageUrl": "asdasdsad"
+    },
+    {
+      "id": "2d9d",
+      "publishedDate": "2025-05-17T15:27:50.773Z",
+      "status": "published",
+      "title": "asdads",
+      "content": "asdasd",
+      "author": "asasdas",
+      "body": "asdasd",
+      "tags": [
+        "asdasdsad"
+      ],
+      "category": "aadasd",
+      "imageUrl": "asdasdasdsadasdasd"
+    },
+    {
+      "id": "e543",
+      "publishedDate": "2025-05-17T15:31:40.391Z",
+      "status": "archived",
+      "title": "asdasd",
+      "content": "asdads",
+      "author": "asdasd",
+      "body": "asdasdasd",
+      "tags": [
+        "asdsadasd"
+      ],
+      "category": "asdasdasd",
+      "imageUrl": "asdasdasdasd"
+    },
+    {
+      "id": "ffce",
+      "publishedDate": "5/17/2025",
+      "status": "archived",
+      "title": "asdsad",
+      "content": "asdasd",
+      "author": "asdsad",
+      "body": "asdasd",
+      "tags": [
+        "asdasdasd"
+      ],
+      "category": "asdasd",
+      "imageUrl": "asdasdassss"
+    }
+  ],
+  "author": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "bio": "John is a data scientist with a passion for machine learning and cloud computing. He has worked with Spell for over 2 years and loves sharing his knowledge with others.",
+      "avatar": "https://images.unsplash.com/photo-1645092551767-5f3c0d4c11a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "bio": "Jane is a software engineer with a focus on cloud services and machine learning. She has been using Spell for over a year and enjoys writing about her experiences.",
+      "avatar": "https://images.unsplash.com/photo-1645092551767-5f3c0d4c11a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "aman",
+      "email": "aman@example.com",
+      "password": "aman123"
+    },
+    {
+      "id": 2,
+      "name": "dhungel",
+      "email": "dhungel@example.com",
+      "password": "dhungel123"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Web Development",
+      "description": "All about web development, frameworks, and tools."
+    },
+    {
+      "id": 2,
+      "name": "Machine Learning",
+      "description": "Insights and tutorials on machine learning and AI."
+    }
+  ]
+}
