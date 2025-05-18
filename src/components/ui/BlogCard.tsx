@@ -1,5 +1,11 @@
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { DeleteBlogPost } from "../../services/services.blog";
+import { CiEdit } from "react-icons/ci";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+
 export interface BlogCardProps {
-  id?: number;
+  id?: string;
   title: string;
   body: string;
   category: string;
@@ -11,6 +17,21 @@ export interface BlogCardProps {
 }
 
 const BlogCard = (data: BlogCardProps) => {
+  const { mutate } = DeleteBlogPost();
+  const handleDelete = (id: string) => {
+    mutate(
+      { id },
+      {
+        onSuccess: () => {
+          toast.success("Blog deleted successfully");
+        },
+        onError: () => {
+          toast.error("Error while deleting blog");
+        },
+      }
+    );
+  };
+
   return (
     <div className="flex flex-col p-4 bg-white shadow-md rounded-lg sm:max-w-[20rem] md:max-w-[30rem] lg:max-w-[40rem] max-w-[100%]">
       <div className="flex flex-col gap-4">
@@ -18,6 +39,22 @@ const BlogCard = (data: BlogCardProps) => {
           <h2 className="text-2xl font-bold m-auto capitalize line-clamp-1">
             {data.title && data.title}
           </h2>
+          <div className="flex ml-auto space-x-2">
+            <RiDeleteBin6Line
+              className=" cursor-pointer text-red-500"
+              title="Delete Blog"
+              onClick={() => {
+                handleDelete(data.id ? data.id : "");
+              }}
+            />
+            <Link to={`/add-blog?id=${data.id}`}>
+              {" "}
+              <CiEdit
+                className=" cursor-pointer text-red-500"
+                title="Edit Blog"
+              />
+            </Link>
+          </div>
           <p className="text-gray-600 m-auto">
             {data.author ? data.author : "Author Name"}
           </p>

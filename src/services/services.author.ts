@@ -1,18 +1,23 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
 import axios, { AxiosError } from "axios";
-import type { BlogCardProps } from "../components/ui/BlogCard";
 import { Keys } from "../lib/keys";
 
-export const GetBlog = (blogId?: string) => {
+interface AuthorProps {
+  id?: string;
+  name: string;
+  bio: string;
+  avatar: string;
+}
+export const GetAuthors = (authorId?: number) => {
   return useQuery<
-    BlogCardProps[],
+    AuthorProps[],
     AxiosError<{ message: string; error: Record<string, unknown> }>
   >({
-    queryKey: [Keys.BLOG, blogId],
+    queryKey: [Keys.BLOG, authorId],
     queryFn: () =>
       axios
-        .get<BlogCardProps[]>(
-          `http://localhost:3000/posts${blogId ? `?id=${blogId}` : ""}`
+        .get<AuthorProps[]>(
+          `http://localhost:3000/author${authorId ? `?id=${authorId}` : ""}`
         )
         .then((response) => {
           return response.data;
@@ -20,44 +25,42 @@ export const GetBlog = (blogId?: string) => {
   });
 };
 
-export const AddBlogPost = () => {
+export const AddAuthorPost = () => {
   return useMutation<
-    BlogCardProps,
+    AuthorProps,
     AxiosError<{ message: string; error: Record<string, unknown> }>,
-    BlogCardProps
+    AuthorProps
   >({
-    mutationFn: (data: BlogCardProps) =>
+    mutationFn: (data: AuthorProps) =>
       axios
-        .post<BlogCardProps>(`http://localhost:3000/posts`, data)
+        .post<AuthorProps>(`http://localhost:3000/author`, data)
         .then((response) => {
           return response.data;
         }),
   });
 };
-
-export const UpdateBlogPost = () => {
+export const UpdateAuthorPost = () => {
   return useMutation<
-    BlogCardProps,
+    AuthorProps,
     AxiosError<{ message: string; error: Record<string, unknown> }>,
-    BlogCardProps
+    AuthorProps
   >({
-    mutationFn: (data: BlogCardProps) =>
+    mutationFn: (data: AuthorProps) =>
       axios
-        .patch(`http://localhost:3000/posts/${data.id}`, data)
+        .patch(`http://localhost:3000/author/${data.id}`, data)
         .then((response) => {
           return response.data;
         }),
   });
 };
-
-export const DeleteBlogPost = () => {
+export const DeleteAuthorPost = () => {
   return useMutation<
     { id: number | string },
     AxiosError<{ message: string; error: Record<string, unknown> }>,
     { id: number | string }
   >({
     mutationFn: ({ id }: { id: number | string }) =>
-      axios.delete(`http://localhost:3000/posts/${id}`).then((response) => {
+      axios.delete(`http://localhost:3000/author/${id}`).then((response) => {
         return response.data;
       }),
   });

@@ -1,18 +1,20 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
 import axios, { AxiosError } from "axios";
-import type { BlogCardProps } from "../components/ui/BlogCard";
 import { Keys } from "../lib/keys";
+import type { CategoryProps } from "../components/Category";
 
-export const GetBlog = (blogId?: string) => {
+export const GetCategory = (categoryId?: number) => {
   return useQuery<
-    BlogCardProps[],
+    CategoryProps[],
     AxiosError<{ message: string; error: Record<string, unknown> }>
   >({
-    queryKey: [Keys.BLOG, blogId],
+    queryKey: [Keys.CATEGORY, categoryId],
     queryFn: () =>
       axios
-        .get<BlogCardProps[]>(
-          `http://localhost:3000/posts${blogId ? `?id=${blogId}` : ""}`
+        .get<CategoryProps[]>(
+          `http://localhost:3000/category${
+            categoryId ? `?id=${categoryId}` : ""
+          }`
         )
         .then((response) => {
           return response.data;
@@ -20,44 +22,42 @@ export const GetBlog = (blogId?: string) => {
   });
 };
 
-export const AddBlogPost = () => {
+export const AddCategoryPost = () => {
   return useMutation<
-    BlogCardProps,
+    CategoryProps,
     AxiosError<{ message: string; error: Record<string, unknown> }>,
-    BlogCardProps
+    CategoryProps
   >({
-    mutationFn: (data: BlogCardProps) =>
+    mutationFn: (data: CategoryProps) =>
       axios
-        .post<BlogCardProps>(`http://localhost:3000/posts`, data)
+        .post<CategoryProps>(`http://localhost:3000/category`, data)
         .then((response) => {
           return response.data;
         }),
   });
 };
-
-export const UpdateBlogPost = () => {
+export const UpdateCategoryPost = () => {
   return useMutation<
-    BlogCardProps,
+    CategoryProps,
     AxiosError<{ message: string; error: Record<string, unknown> }>,
-    BlogCardProps
+    CategoryProps
   >({
-    mutationFn: (data: BlogCardProps) =>
+    mutationFn: (data: CategoryProps) =>
       axios
-        .patch(`http://localhost:3000/posts/${data.id}`, data)
+        .patch(`http://localhost:3000/category/${data.id}`, data)
         .then((response) => {
           return response.data;
         }),
   });
 };
-
-export const DeleteBlogPost = () => {
+export const DeleteCategoryPost = () => {
   return useMutation<
     { id: number | string },
     AxiosError<{ message: string; error: Record<string, unknown> }>,
     { id: number | string }
   >({
     mutationFn: ({ id }: { id: number | string }) =>
-      axios.delete(`http://localhost:3000/posts/${id}`).then((response) => {
+      axios.delete(`http://localhost:3000/category/${id}`).then((response) => {
         return response.data;
       }),
   });
