@@ -14,7 +14,7 @@ type TableProps<T> = {
   actionColumn?: (row: T) => React.ReactNode; // Add this prop
 };
 
-function Table<T>({ columns, data, keyField, actionColumn }: TableProps<T>) {
+function Table<T>({ columns, data, actionColumn }: TableProps<T>) {
   return (
     <div className="overflow-x-auto w-full  md:w-3/4 m-auto">
       <table className="min-w-full divide-y divide-gray-200 bg-white dark:bg-gray-800 rounded-lg shadow">
@@ -37,9 +37,9 @@ function Table<T>({ columns, data, keyField, actionColumn }: TableProps<T>) {
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
-          {data.map((row) => (
+          {data.map((row, index) => (
             <tr
-              key={String(row[keyField])}
+              key={index + 1}
               className="hover:bg-gray-50 dark:hover:bg-gray-900 transition">
               {columns.map((col, index) => (
                 <td

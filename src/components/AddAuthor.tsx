@@ -10,7 +10,7 @@ import Table from "./ui/Table";
 import { toast } from "react-toastify";
 
 type AuthorProps = {
-  id: string;
+  id?: string;
   name: string;
   avatar: string;
   bio: string;
@@ -47,22 +47,26 @@ const AddAuthor = () => {
   const { mutate: updateAuthor } = UpdateAuthorPost();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    mutate(form, {
-      onSuccess: () => {
-        setForm({
-          id: "",
-          name: "",
-          avatar: "",
-          bio: "",
-        });
-      },
-      onError: (error) => {
-        console.error("Error adding author:", error);
-      },
-    });
+    mutate(
+      { ...form, id: Date.now().toLocaleString() },
+      {
+        onSuccess: () => {
+          setForm({
+            id: "",
+            name: "",
+            avatar: "",
+            bio: "",
+          });
+        },
+        onError: (error) => {
+          console.error("Error adding author:", error);
+        },
+      }
+    );
   };
 
   const handleEdit = () => {
+    console.log("form", form);
     updateAuthor(form, {
       onSuccess: () => {
         setForm({
@@ -161,6 +165,7 @@ const AddAuthor = () => {
           <div className="space-x-2 space-y-2">
             <Button
               onClick={() => {
+                console.log("row", row);
                 setForm({
                   id: row.id ?? "",
                   name: row.name,

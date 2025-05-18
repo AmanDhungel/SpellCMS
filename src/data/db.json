@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": "1",
-      "title": "why How to use Spell123",
+      "title": "why How to use Spell1234",
       "publishedDate": "5/18/2025",
       "author": "Aman Dhungel",
       "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam natus veniam iure excepturi quae dicta soluta at dolores? Aliquid facere nobis illum, culpa voluptatum incidunt minima labore harum obcaecati!",
@@ -47,40 +47,40 @@
   ],
   "author": [
     {
-      "id": "4244",
-      "name": "as12334",
-      "avatar": "dasdasdsadadsasdasdasdasdasdsad",
-      "bio": "aasdasdsadasdsaasdasdsad4555555555555555555555555555555555555555555555askkssssssssssssssssssssssssssssssss2222222222222222222222222222222222"
-    },
-    {
       "id": "",
-      "name": "asdkjsadkj",
-      "avatar": "asjdaskjdjka",
-      "bio": "asdkjadkjadkjasdkj"
-    },
-    {
-      "id": "",
-      "name": "ass",
-      "avatar": "sss",
-      "bio": "ddsa"
+      "name": "asdsad",
+      "avatar": "asdsadas",
+      "bio": "asdasdsad"
     },
     {
       "id": "",
       "name": "asdasd",
-      "avatar": "asdasdasd",
-      "bio": "sssss"
+      "avatar": "asdasd",
+      "bio": "adsasd"
     },
     {
-      "id": "",
-      "name": "ssss",
-      "avatar": "asdasd",
-      "bio": "asdasdsadsad"
+      "id": "1,747,586,997,848",
+      "name": "asdasd",
+      "avatar": "sadasd",
+      "bio": "asdsad"
     },
     {
-      "id": "",
-      "name": "asdsad",
-      "avatar": "asdasd",
-      "bio": "asddddd"
+      "id": "1,747,587,011,762",
+      "name": "asdds",
+      "avatar": "asdsadas",
+      "bio": "asdasdsad"
+    },
+    {
+      "id": "1,747,587,080,307",
+      "name": "asdasd",
+      "avatar": "asdasda",
+      "bio": "sdasd"
+    },
+    {
+      "id": "1,747,587,098,123",
+      "name": "sss",
+      "avatar": "sdds",
+      "bio": "dasd"
     }
   ],
   "users": [
@@ -120,19 +120,19 @@
   ],
   "category": [
     {
-      "id": "1",
-      "name": "Web Development123333",
-      "description": "All about web development, frameworks, and tools."
+      "id": "0ad8",
+      "name": "asdasd",
+      "description": "asdasd"
     },
     {
-      "id": "1e48",
-      "name": "Web Development123333",
-      "description": "dasdsadasdsadsad"
+      "id": "4977",
+      "name": "asdsadasdas",
+      "description": "dsadasdsad"
     },
     {
-      "id": "44bd",
-      "name": "asdsad",
-      "description": "asdasdasd"
+      "id": "cb8a",
+      "name": "sdasdasdsa",
+      "description": "ddsaa"
     }
   ]
 }
