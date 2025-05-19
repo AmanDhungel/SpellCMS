@@ -60,6 +60,7 @@ Whether you're a developer wanting to explore CRUD functionality or a learner ex
 - **React Router DOM** – Client-side routing
 - **JSON Server** – Mock REST API for simulating backend
 - **Axios** – HTTP client
+- **TanStack Query** – Library for managing asynchronous data
 - **Tailwind CSS** – Utility-first CSS framework
 - **LocalStorage** – Token-based authentication mock
 
