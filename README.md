@@ -1,80 +1,66 @@
-# SpellCMS
+# Spell CMS 🧙‍♂️
 
-SpellCMS is a modern content management system (CMS) built with React, TypeScript, and Vite. It provides a fast development experience, hot module replacement (HMR), and a robust linting setup for scalable, maintainable code.
+**Spell CMS** is a lightweight and developer-friendly Content Management System built using modern web technologies. It allows users to create, read, update, and delete blogs, authors, and categories with ease. Designed as a single-page application with a smooth user experience and mock backend integration, this CMS is perfect for learning and prototyping.
 
-## Features
+---
 
-- ⚡️ **Vite-powered**: Lightning-fast development and build times.
-- ⚛️ **React + TypeScript**: Type-safe, component-driven UI development.
-- 🔥 **HMR**: Instant feedback with Hot Module Replacement.
-- 🧹 **ESLint Integration**: Pre-configured with recommended and type-aware linting rules.
-- 🧩 **Plugin Support**: Easily extendable with official and community plugins.
+## 🚀 Project Overview
 
-## Getting Started
+This CMS project demonstrates key features of a full-stack content system including:
 
-1. **Install dependencies:**
+- User authentication
+- Blog management
+- Author and category management
+- Filtering and search capabilities
+- Local development using `json-server` for mock API
+
+Whether you're a developer wanting to explore CRUD functionality or a learner experimenting with client-server architecture, **Spell CMS** provides a great starting point.
+
+---
+
+## 📦 Technologies Used
+
+- **React.js** – Frontend library
+- **React Router DOM** – Client-side routing
+- **JSON Server** – Mock REST API for simulating backend
+- **Axios** – HTTP client
+- **Tailwind CSS** – Utility-first CSS framework
+- **LocalStorage** – Token-based authentication mock
+
+---
+
+## 🛠️ Installation and Setup
+
+To get started locally, follow the steps below:
+
+### 1. Clone the repository
 
 ```bash
-npm install
+git clone https://github.com/AmanDhungel/SpellCMS.git
+cd spell
 ```
 
-2. **Start the development server:**
+### 2. install all dependencies
+
+```bash
+npm i
+```
+
+### 3. Run application in the terminal
 
 ```bash
 npm run dev
 ```
 
-3. **Run JSON Server:**
+### 3. Run Json Server in another terminal
 
 ```bash
 json-server --watch src/data/db.json
 ```
 
-4. **Build for production:**
+### 4. Username & Password
 
 ```bash
-npm run build
+username: aman
+password: aman123
 ```
-
-## Implemented Features
-
-- 🔑 **Login with Token**: Secure authentication mechanism using tokens for user login.
-- 📝 **CRUD Operations in Blog**: Full Create, Read, Update, and Delete functionality for managing blog posts.
-- 👤 **CRUD Operations in Author**: Manage author details with comprehensive CRUD operations.
-- 📂 **CRUD Operations in Category**: Organize and manage categories with complete CRUD capabilities.
-
-## ESLint Configuration
-
-SpellCMS comes with a minimal ESLint setup. For production-grade applications, enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [...tseslint.configs.recommendedTypeChecked],
-  languageOptions: {
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
-
-```js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default tseslint.config({
-  plugins: {
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
-
----
-
-Feel free to contribute or open issues to help improve SpellCMS!
