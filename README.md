@@ -1,6 +1,6 @@
-# Spell CMS 🧙‍♂️
+# Spell CMS
 
-## 🛠️ Installation and Setup
+## Installation and Setup
 
 To get started locally, follow the steps below:
 
